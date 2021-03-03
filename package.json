@@ -1,0 +1,21 @@
+{
+  "name": "ts-tdd-jest",
+  "version": "1.0.0",
+  "description": "31da",
+  "author": "@ahsouza Aníbal Henrique De Souza <annibalhsouza@gmail.com>"
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahsouza/ts-tdd-jest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahsouza/ts-tdd-jest/issues"
+  },
+  "homepage": "https://github.com/ahsouza/ts-tdd-jest#readme"
+}

@@ -11,7 +11,12 @@
     "type": "git",
     "url": "git+https://github.com/ahsouza/ts-tdd-jest.git"
   },
-  "keywords": ["node", "typescript", "eslint", "jest"],
+  "keywords": [
+    "node",
+    "typescript",
+    "eslint",
+    "jest"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ahsouza/ts-tdd-jest/issues"
@@ -26,6 +31,8 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1",
     "git-commit-msg-linter": "^3.0.0",
+    "husky": "^5.1.3",
+    "lint-staged": "^10.5.4",
     "typescript": "^4.2.2"
   }
 }

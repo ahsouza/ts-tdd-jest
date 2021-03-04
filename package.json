@@ -5,7 +5,7 @@
   "author": "@ahsouza Aníbal Henrique De Souza <annibalhsouza@gmail.com",
   "main": "index.js",
   "scripts": {
-    "test": "jest --passWithNoTests",
+    "test": "jest --passWithNoTests --watch",
     "test:staged": "jest --passWithNoTests"
   },
   "repository": {

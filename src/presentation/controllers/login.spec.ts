@@ -1,4 +1,5 @@
 import { LoginController } from './login'
+import { MissingParamError } from '../errors/missing-param-error'
 
 describe('Login Controller', ()=> {
 
@@ -13,7 +14,7 @@ describe('Login Controller', ()=> {
     }
     const httpResponse = sut.handle(httpRequest)
     expect(httpResponse.statusCode).toBe(400)
-    expect(httpResponse.body).toEqual(new Error('Missing param: username'))
+    expect(httpResponse.body).toEqual(new MissingParamError('username'))
   })
 
 })

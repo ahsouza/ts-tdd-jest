@@ -1,3 +1,5 @@
+import {httpResponse, httpRequest } from '../protocols/http'
+
 export class LoginController {
   handle (httpRequest: any): any {
     if (!httpRequest.body.username){

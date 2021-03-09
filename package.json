@@ -1,11 +1,10 @@
 {
   "name": "ts-tdd-jest",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "TDD Typescript com Jest",
   "author": "@ahsouza Aníbal Henrique De Souza <annibalhsouza@gmail.com",
-  "main": "index.js",
   "scripts": {
-    "test": "jest --passWithNoTests --watch",
+    "test": "jest --passWithNoTests --watch --no-cache",
     "test:staged": "jest --passWithNoTests"
   },
   "repository": {
@@ -16,9 +15,10 @@
     "node",
     "typescript",
     "eslint",
-    "jest"
+    "jest",
+    "husky"
   ],
-  "license": "ISC",
+  "license": "GNU",
   "bugs": {
     "url": "https://github.com/ahsouza/ts-tdd-jest/issues"
   },

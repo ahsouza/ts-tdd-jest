@@ -6,18 +6,16 @@ const makeLogin = (): LoginController => {
 }
 
 describe('Login Controller', () => {
-  test('Should return 400 case no username is provided', ()=>{
+  test('Should return 400 case no username is provided', () => {
     const sut = makeLogin()
-    const request = {
+    const httpRequest = {
       body: {
-        username: 'seuusername',
         password: 'suasenha',
         password_confirmation: 'repetirsenha'
       }
     }
-    const HttpResponse = sut.handle(request)
-    expect(HttpResponse.statusCode).toBe(400)
-    expect(HttpResponse.body).toEqual(new MissingParamError('username'))
+    const httpResponse = sut.handle(httpRequest)
+    expect(httpResponse.statusCode).toBe(400)
+    expect(httpResponse.body).toEqual(new MissingParamError('username'))
   })
-
 })

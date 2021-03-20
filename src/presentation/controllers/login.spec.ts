@@ -167,4 +167,23 @@ describe('Login Controller', () => {
     expect(httpResponse.statusCode).toBe(500)
     expect(httpResponse.body).toEqual(new ServerError())
   })
+  test('Should return 200 if valid data is provided', () => {
+    const { sut } = makeSut()
+    const httpRequest = {
+      body: {
+        username: 'valid_username',
+        email: 'valid@email.com.br',
+        password: 'valid_senha',
+        password_confirmation: 'valid_senha'
+      }
+    }
+    const httpResponse = sut.handle(httpRequest)
+    expect(httpResponse.statusCode).toBe(200)
+    expect(httpResponse.body).toEqual({
+      id: 'valid_id',
+      username: 'valid_name',
+      email: 'valid_email@email.com',
+      password: 'valid_password'
+    })
+  })
 })

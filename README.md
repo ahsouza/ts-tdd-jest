@@ -19,7 +19,7 @@
     </a>
   </p>
   <div style="display: flex" align="center">
-    <img src="assets/node-icon.png" width=50 height=50 title='node'/> <img src="assets/ts-icon.png" width=50 height=50 title='typescript'/>
+    <img src="assets/node-icon.png" width=50 height=50 title='node'/> <img src="assets/ts-icon.png" width=65 height=50 title='typescript'/>
   </div>
 </p>
 
@@ -56,7 +56,7 @@ branch: main
 - Clone o repositório `https://github.com/ahsouza/ts-tdd-jest.git` 
 - Altere a branch do projeto de `main` para `frontend` executando o comando `git checkout frontend` 
 - Instale as dependências: `npm install` or `yarn`
-- Execute o servidor express: `npm run test` or `yarn test`
+- Execute os testes: `npm run test` or `yarn test`
 
 <br>
 

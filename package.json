@@ -4,8 +4,12 @@
   "description": "TDD Typescript com Jest",
   "author": "@ahsouza Aníbal Henrique De Souza <annibalhsouza@gmail.com",
   "scripts": {
-    "test": "jest --passWithNoTests --watch --no-cache",
-    "test:staged": "jest --passWithNoTests"
+    "test": "jest --passWithNoTests --silent --noStackTrace --no-cache --runInBand",
+    "test:verbose": "jest --passWithNoTests --no-cache",
+    "test:unit": "npm test -- --watch --no-cache -c jest-unit-config.js",
+    "test:integration": "npm test -- --watch --no-cache -c jest-integration-config.js",
+    "test:staged": "npm test",
+    "test:ci": "npm test -- --coverage"
   },
   "repository": {
     "type": "git",
